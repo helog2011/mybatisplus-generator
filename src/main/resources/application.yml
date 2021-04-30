@@ -1,0 +1,20 @@
+server:
+  port: 8888
+  servlet:
+    application-display-name: code-generator
+
+spring:
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .ftl
+  freemarker:
+    cache: false
+    request-context-attribute: request
+logging:
+  level:
+    root: WARN
+    org:
+      springframework:
+        web: DEBUG
+      hibernate: ERROR
